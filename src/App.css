@@ -1,0 +1,121 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.result {
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 90px;
+    background-color: #80c9c9;
+    width: 100%;
+}
+
+.result p {
+    font-size: 40px;
+    margin: 5px;
+    color: black;
+}
+
+.calculator-body {
+    /* max-width: 400px;
+     */
+    max-width: 400px;
+    margin: auto;
+    /* margin-top: 100px; */
+    /* margin-top: 10vh; */
+    /* margin-bottom: 0vh; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin-top: 1px; */
+}
+
+.button {
+    display: block;
+    /* box-sizing: border-box; */
+}
+
+button {
+    width: 25%;
+    height: 90px;
+    font-size: 30px;
+    background: #cad2c5;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+button:hover {
+    background: black;
+    color: white;
+    cursor: default;
+}
+
+@media screen and (max-width:400px) {
+    .result {
+        height: 100px;
+        margin-top: 0;
+    }
+    .calculator-body {
+        max-width: 100%;
+    }
+    button {
+        height: 107px;
+    }
+}
+
+
+/* 
+@media screen and (max-width:800px) {
+    .result {
+        height: 150px;
+    }
+    .calculator-body {
+        margin-top: 50px;
+        max-width: 90%;
+    }
+    button {
+        height: 150px;
+    }
+} */
